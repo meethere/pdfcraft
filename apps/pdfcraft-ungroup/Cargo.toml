@@ -1,0 +1,17 @@
+[package]
+name = "pdfcraft-ungroup"
+description = "Ungroups Form artwork in a copy of a PDF, so its text can be edited in PdfCraft"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "pdfcraft-ungroup"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+pdfcraft-automation = { workspace = true }
+serde_json = { workspace = true }
